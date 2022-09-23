@@ -1,0 +1,16 @@
+{
+   "name":"TOUKA19",
+   "description":"MKAE YOUR OWN WEB",
+   "logo":"https://a-static.besthdwallpaper.com/tokyo-ghoul-re-touka-kirishima-wallpaper-9405_L.jpg",
+   "buildpacks":[
+      {
+         "url":"heroku/php"
+      }
+   ],
+   "formation":{
+      "web":{
+         "quantity":1,
+         "size":"free"
+      }
+   }
+}
