@@ -1,0 +1,15 @@
+name: composer update
+
+on: workflow_dispatch
+
+jobs:
+  composer_update_job:
+    runs-on: ubuntu-latest
+    name: composer update
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: composer update action
+        uses: kawax/composer-update-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
